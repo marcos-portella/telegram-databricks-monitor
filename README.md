@@ -1,25 +1,25 @@
-# Layered Architecture API (Customers & Orders)
+## Layered Architecture API (Customers & Orders)
 ![Monitor Status](https://github.com/marcos-portella/telegram-databricks-monitor/actions/workflows/main.yml/badge.svg)
 
-# Databricks Summit Session Monitor
+## Databricks Summit Session Monitor
 
 A lightweight Python automation tool designed to monitor the number of available sessions at the **Databricks Data + AI Summit**. It notifies stakeholders via **Telegram** whenever new sessions are added to the official agenda.
 
-## Tech Stack
+### Tech Stack
 
 - **Language:** Python 3.9
 - **Libraries:** BeautifulSoup4 (Web Scraping), Requests (API calls), Python-dotenv
 - **Automation:** GitHub Actions (CI/CD)
 - **Notifications:** Telegram Bot API
 
-## Features
+### Features
 
 - **Automated Scraping:** Periodically checks the Databricks Summit agenda website.
 - **State Persistence:** Uses a local `last_count.txt` file to track the previous session count and avoid redundant alerts.
 - **Serverless Execution:** Runs entirely on GitHub Actions infrastructure (no hosting costs).
 - **Instant Alerts:** Sends real-time notifications to a Telegram group/user when changes are detected.
 
-## Setup & Configuration
+### Setup & Configuration
 
 ### 1. Telegram Bot
 1. Create a bot using [@BotFather](https://t.me/botfather) to get your `TELEGRAM_TOKEN`.
