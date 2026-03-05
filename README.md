@@ -1,3 +1,6 @@
+# Layered Architecture API (Customers & Orders)
+![Monitor Status](https://github.com/marcos-portella/telegram-databricks-monitor/actions/workflows/main.yml/badge.svg)
+
 # Databricks Summit Session Monitor
 
 A lightweight Python automation tool designed to monitor the number of available sessions at the **Databricks Data + AI Summit**. It notifies stakeholders via **Telegram** whenever new sessions are added to the official agenda.
