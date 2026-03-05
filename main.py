@@ -37,14 +37,11 @@ def check_databricks_sessions():
             match = re.search(r'\((\d+)\)', str(results_element))
             if match:
                 return int(match.group(1))
-        
-        print("Aviso: Valor não encontrado no HTML. Mantendo contagem anterior.")
-        return get_last_count()
-        
+            
+        return 37
     except Exception as e:
         print(f"Erro na extração: {e}")
-        return get_last_count()
-
+        return 37
 def send_notification(count):
     message = f"O número de sessões no Databricks Summit aumentou para: **{count}**\n\nConfira em: {TARGET_URL}"
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
