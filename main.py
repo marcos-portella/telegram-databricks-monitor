@@ -46,7 +46,7 @@ def check_databricks_sessions():
         return get_last_count()
 
 def send_notification(count):
-    message = f"🚨 **Novo Alerta Noach!**\nO número de sessões no Databricks Summit aumentou para: **{count}**\n\nConfira em: {TARGET_URL}"
+    message = f"O número de sessões no Databricks Summit aumentou para: **{count}**\n\nConfira em: {TARGET_URL}"
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
     
     payload = {"chat_id": CHAT_ID, "text": message, "parse_mode": "Markdown"}
